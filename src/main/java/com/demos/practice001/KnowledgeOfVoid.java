@@ -40,10 +40,14 @@ public class KnowledgeOfVoid {
     }
 
     void usageOfVoid() {
-        Class<Integer> intType = Integer.TYPE;
-        Class<Void> voidType = Void.TYPE;
-        System.out.println(intType);
-        System.out.println(voidType);
-        System.out.println(int.class);
+        System.out.println(Byte.TYPE        + "\t\t"    + Byte.class        + "\t\t\t"  + byte.class);
+        System.out.println(Short.TYPE       + "\t\t"    + Short.class       + "\t\t\t"  + short.class);
+        System.out.println(Integer.TYPE     + "\t\t\t"  + Integer.class     + "\t\t\t"  + int.class);
+        System.out.println(Long.TYPE        + "\t\t"    + Long.class        + "\t\t\t"  + long.class);
+        System.out.println(Float.TYPE       + "\t\t"    + Float.class       + "\t\t\t"  + float.class);
+        System.out.println(Double.TYPE      + "\t\t"    + Double.class      + "\t\t\t"  + double.class);
+        System.out.println(Boolean.TYPE     + "\t\t"    + Boolean.class     + "\t\t\t"  + boolean.class);
+        System.out.println(Character.TYPE   + "\t\t"    + Character.class   + "\t\t"    + char.class);
+        System.out.println(Void.TYPE        + "\t\t"    + Void.class        + "\t\t\t"  + void.class);
     }
 }
