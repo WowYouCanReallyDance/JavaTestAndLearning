@@ -14,7 +14,7 @@ public class FibonacciBenchmark2 {
     static final BigInteger ONE = BigInteger.ONE;
     static final BigInteger TWO = BigInteger.TWO;
 
-    @RunnerTask
+    @RunnerTask(false)
     public void task() {
         long number = 40L;
         int count = 10;
