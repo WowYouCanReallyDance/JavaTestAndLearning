@@ -3,12 +3,13 @@ package com.demos.practice001;
 import com.demos.annotations.RunnerMember;
 import com.demos.annotations.RunnerTask;
 import com.demos.utils.fmt.Printable;
-import com.google.common.base.Strings;
 import org.apache.commons.lang3.StringUtils;
 
 import java.lang.management.ManagementFactory;
 import java.lang.management.RuntimeMXBean;
-import java.time.*;
+import java.time.Instant;
+import java.time.LocalTime;
+import java.time.ZoneId;
 
 @RunnerMember
 public class JVMShutdownHook {
@@ -29,7 +30,7 @@ public class JVMShutdownHook {
                             mxBean.getVmVendor()
                     ))
                     .line(StringUtils.join(
-                            "JVM start on: ",
+                            "JVM started on: ",
                             LocalTime.ofInstant(Instant.ofEpochMilli(mxBean.getStartTime()), ZoneId.of("UTC+8"))
                     ))
                     .line(StringUtils.join(
